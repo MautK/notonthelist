@@ -12,51 +12,71 @@
     
 </style>
 </head>
-<body>
+<body background="img/rain.gif">
     
-    <!--
-    
-    <div id='iframe'>   
-    <iframe src="https://www.youtube.com/embed/Bghvl43pcKA" frameborder="0"></iframe>
-         </div>
-    -->
-    
-<div id="demo">
+    <div id="demo">
      <p>
     You're on the list!</p>
      </div>
     
+    <div id="iframe">
+    <iframe src="https://www.youtube.com/embed/-AsLISPht_M" frameborder="0"></iframe>
+        </div>
     
-    <button id="discoball">Disco!</button>
-    <div id="disco_text"> Click the button to validate your existance at the party</div>
-    
+<div id="buttons">
+    <input type="button" value="Disco!" onclick="return changeDisco(this);" />
+    <input type="button" value="Track ID?!" onclick="return changeTrackID(this);" />
+    <input type="button" value="Nice Filter" onclick="return changeFilter(this);" />
+    <input type="button" value="Honk" onclick="return changeHonk(this);" />
+    <input type="button" value="Yaay" onclick="return changeConfetti(this);" />
+    </div>
 
-    <br><br>
-    
-    <button id="trackid" href="#">Track ID?</button>
-     <label class="switch">
-    <input type="checkbox">
-    <span class="slider"></span></label>
-    <br><br>
-    
-    <button id="analog_action" href="#">I'm feeling funny</button>
-     <label class="switch">
-    <input type="checkbox">
-    <span class="slider"></span></label>
-    <br><br>
-    
-        <script src='https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.4/p5.js'></script>
-<script src='https://cdn.rawgit.com/bit101/quicksettings/master/quicksettings.js'></script>
-<script src='https://cdn.rawgit.com/bitcraftlab/p5.gui/master/libraries/p5.gui.js'></script>
 
-    <script src="js/buttonaction.js"></script>
+<script type="text/javascript">
+function changeDisco( el )
+{
+    if ( el.value === "Disco!" )
+        el.value = " WAIT";
+    else
+        el.value = "Disco!";
+}
+    
+    function changeTrackID( el )
+{
+    if ( el.value === "Track ID?!" )
+        el.value = "    WAIT   ";
+    else
+        el.value = "Track ID?!";
+}
+    
+        function changeFilter( el )
+{
+    if ( el.value === "Nice Filter" )
+        el.value = "    WAIT    ";
+    else
+        el.value = "Nice Filter";
+}
+    
+            function changeHonk( el )
+{
+    if ( el.value === "Honk" )
+        el.value = "WAIT";
+    else
+        el.value = "Honk";
+}
+    
+    
+                function changeConfetti( el )
+{
+    if ( el.value === "Yaay" )
+        el.value = "WAIT";
+    else
+        el.value = "Yaay";
+}
+    
+    
+</script>
 
-    <script>
-    $("#discoball").click(function() {
-    $("#disco_text").toggle();
-    $(".switch").toggle();
-});
-    </script>
     
 </body>
 </html>
