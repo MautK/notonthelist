@@ -1,0 +1,62 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <script src="jquery-3.3.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/website.css">
+    <link rel="stylesheet" type="text/javascript" href = "js/buttonaction.js">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+<style>
+    
+</style>
+</head>
+<body>
+    
+    <!--
+    
+    <div id='iframe'>   
+    <iframe src="https://www.youtube.com/embed/Bghvl43pcKA" frameborder="0"></iframe>
+         </div>
+    -->
+    
+<div id="demo">
+     <p>
+    You're on the list!</p>
+     </div>
+    
+    
+    <button id="discoball">Disco!</button>
+    <div id="disco_text"> Click the button to validate your existance at the party</div>
+    
+
+    <br><br>
+    
+    <button id="trackid" href="#">Track ID?</button>
+     <label class="switch">
+    <input type="checkbox">
+    <span class="slider"></span></label>
+    <br><br>
+    
+    <button id="analog_action" href="#">I'm feeling funny</button>
+     <label class="switch">
+    <input type="checkbox">
+    <span class="slider"></span></label>
+    <br><br>
+    
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.4/p5.js'></script>
+<script src='https://cdn.rawgit.com/bit101/quicksettings/master/quicksettings.js'></script>
+<script src='https://cdn.rawgit.com/bitcraftlab/p5.gui/master/libraries/p5.gui.js'></script>
+
+    <script src="js/buttonaction.js"></script>
+
+    <script>
+    $("#discoball").click(function() {
+    $("#disco_text").toggle();
+    $(".switch").toggle();
+});
+    </script>
+    
+</body>
+</html>
