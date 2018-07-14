@@ -12,12 +12,14 @@
     
 </style>
 </head>
-<body background="img/rain.gif">
+<body background="img/confetti.gif">
     
     <div id="demo">
      <p>
     You're on the list!</p>
      </div>
+    <div id = "extra_text">
+    <p>Press buttons to interact</p></div>
     
     <div id="iframe">
     <iframe src="https://www.youtube.com/embed/-AsLISPht_M" frameborder="0"></iframe>
@@ -53,6 +55,7 @@ function changeDisco( el )
 {
     if ( el.value === "Nice Filter" )
         el.value = "    WAIT    ";
+        
     else
         el.value = "Nice Filter";
 }
