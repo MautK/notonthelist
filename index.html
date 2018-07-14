@@ -3,9 +3,22 @@
 <head>
     <script src="jquery-3.3.1.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.4.5/socket.io.min.js"></script>
+    <script>
+    $(document).ready(function() {
+      //var socket = io.connect('http://141.54.48.84:8080');
+      var socket = io.connect('http://95.90.215.174:8080'); //maud's IP address
+      $('#buttonOn').click(function(e){
+        socket.emit('DISCO');
+        e.preventDefault();
+      });
+
+    });
+  </script>
+    
 <meta name="viewport" content="width=device-width, initial-scale=1" charset="utf-8">
     <link rel="stylesheet" type="text/css" href="css/website.css">
-    <link rel="stylesheet" type="text/javascript" href = "js/buttonaction.js">
+    <link rel="stylesheet" type="text/javascript" href = "js/script.js">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
 <style>
@@ -26,6 +39,8 @@
         </div>
     
 <div id="buttons">
+    <button id="buttonOn" href="#">DISCO</button>
+    
     <input type="button" value="Disco!" onclick="return changeDisco(this);" />
     <input type="button" value="Track ID?!" onclick="return changeTrackID(this);" />
     <input type="button" value="Nice Filter" onclick="return changeFilter(this);" />
